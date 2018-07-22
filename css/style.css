@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.blackout {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute; }
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  position: relative; }
+
+header {
+  background: url("../img/start.jpg") center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed; }
+  header nav {
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    background-image: url("../img/dott.png"); }
+    header nav ul {
+      display: flex;
+      justify-content: space-evenly; }
+      header nav ul li a {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 1.6rem;
+        text-align: center;
+        font-size: 2.4rem;
+        letter-spacing: .5rem;
+        color: #eff0f3;
+        text-decoration: none; }
+        header nav ul li a::before, header nav ul li a::after {
+          content: '';
+          display: block;
+          height: .2rem;
+          width: 100%;
+          background-color: #fff;
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+        header nav ul li a::after {
+          width: 0;
+          background-color: #DA2B2A;
+          transition: all .5s ease; }
+        header nav ul li a:hover::after {
+          width: 100%; }
+  header h1 {
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3.5rem;
+    border: 0.4rem solid #DA2B2A;
+    border-radius: .8rem;
+    background-image: url(../img/dott.png);
+    text-align: center;
+    color: #eff0f3;
+    font-size: 6.5rem;
+    letter-spacing: .5rem; }
+
+section {
+  min-height: 80vh;
+  position: relative; }
+  section h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    letter-spacing: .6rem;
+    padding: 4rem; }
+  section p {
+    font-size: 1.6rem;
+    line-height: 2.6rem; }
+  section iframe {
+    width: 100%;
+    margin-bottom: 2rem; }
+  section:nth-of-type(even) {
+    background: url("../img/background1.jpeg") center/cover;
+    background-attachment: fixed;
+    color: white; }
+
+footer {
+  background-color: #DA2B2A;
+  height: 50vh;
+  color: #eff0f3; }
+
+@media all and (max-width: 760px) {
+  html {
+    font-size: 6px; } }
+@media all and (max-width: 630px) {
+  header h1 {
+    width: 90%;
+    font-size: 4.5rem; }
+  header nav ul {
+    flex-direction: column; }
+    header nav ul li a {
+      font-size: 3.4rem; } }
+
+/*# sourceMappingURL=style.css.map */

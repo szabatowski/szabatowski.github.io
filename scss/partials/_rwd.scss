@@ -1,0 +1,25 @@
+@media all and (max-width: 760px) {
+    html {
+        font-size: 6px;
+    }
+}
+
+@media all and (max-width: 630px) {
+    header {
+        h1 {
+            width: 90%;
+            font-size: 4.5rem;
+        }
+
+        nav {
+            ul {
+                flex-direction: column;
+                li {
+                    a {
+                        font-size: 3.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

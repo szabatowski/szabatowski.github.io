@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.blackout {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    //z-index: -1;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative; //wyrywa tekst z flow dokumentu, bez z-index przesuwa przed przyciemnienie
+}

@@ -1,0 +1,33 @@
+section {
+    min-height: 80vh;
+    position: relative;
+
+    h2 {
+        font-size: 3.6rem;
+        text-align: center;
+        letter-spacing: .6rem;
+        padding: 4rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    iframe {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    &:nth-of-type(even){
+        background: url("../img/background1.jpeg") center/cover;
+        background-attachment: fixed;
+        color: white;
+       // z-index: 1;
+    }
+
+    // &:nth-of-type(odd){
+    //     background: url("../img/background2.jpeg") center/cover;
+    //     background-attachment: fixed;
+    // }
+}
+
